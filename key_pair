@@ -1,4 +1,0 @@
-resource "aws_key_pair" "terr_auth" {
-  key_name   = "terr-key"
-  public_key = file("~/.ssh/terrkey.pub")
-}

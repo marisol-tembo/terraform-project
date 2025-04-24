@@ -6,18 +6,8 @@ terraform {
     }
   }
 
-  required_version = ">= 1.2.0"
 }
 
 provider "aws" {
-  region  = "us-west-2"
-}
-
-resource "aws_instance" "terraform-inst" {
-  ami           = "ami-830c94e3"
-  instance_type = "t2.micro"
-
-  tags = {
-    Name = "terraform-ins"
-  }
+  region                   = "us-west-2"
 }

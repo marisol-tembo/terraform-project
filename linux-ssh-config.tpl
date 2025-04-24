@@ -1,7 +1,8 @@
-cat << EOE >> ~/.ssh/config
+cat <<EOF >> ~/.ssh/config
 
 Host ${hostname}
-  HostName ${hostanme}
+  HostName ${hostname}
   User ${user}
   IdentityFile ${identityfile}
 EOF
+

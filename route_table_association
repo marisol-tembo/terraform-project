@@ -1,4 +1,0 @@
-resource "aws_route_table_association" "rt_associaton" {
-  subnet_id      = aws_subnet.terr_vpc.id
-  route_table_id = aws_route_table.pub_rt.id
-}
