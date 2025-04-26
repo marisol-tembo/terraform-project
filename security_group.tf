@@ -7,7 +7,7 @@ resource "aws_security_group" "terr_sg" {
     from_port   = 0
     to_port     = 0
     protocol    = "-1"
-    cidr_blocks = ["127.0.0.1/32"]
+    cidr_blocks = ["0.0.0.0/0"]
 
   }
   egress {
